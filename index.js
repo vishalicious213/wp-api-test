@@ -1,0 +1,1 @@
+console.log("WP API test")
