@@ -1,19 +1,21 @@
 const postsSection = document.getElementById("blog-posts")
 
-function getPosts() {
-    fetch("https://public-api.wordpress.com/wp/v2/sites/neophyte.home.blog/posts")
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`HTTP error: ${response.status}`)
-        }
-        return response.json()
-    })
-    .then(data => {
-        console.log(data)
-    })
-    .catch(error => {
-        console.error(`Could not get posts: ${error}`)
-    })
+async function getPosts() {
+    const response = await fetch("https://public-api.wordpress.com/wp/v2/sites/neophyte.home.blog/posts")
+    
+    if (!response.ok) {
+        throw new Error(`HTTP error: ${response.status}`)
+    }
+
+    const data = await response.json()
+    return data
 }
 
-getPosts()
+const posts = getPosts()
+posts
+.then(data => {
+    console.log(data)
+})
+.catch(error => {
+    console.error(`Could not get posts: ${error}`)
+})
