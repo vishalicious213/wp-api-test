@@ -56,3 +56,12 @@
   word-wrap: break-word;
   font-size: .8rem;
 }
+
+.wp-block-image {
+  margin: 1rem auto;
+}
+
+.wp-block-image img {
+  width: 100%;
+  height: auto;
+}
