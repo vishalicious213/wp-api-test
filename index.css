@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.post-separator {
+  margin: 2rem 0;
+}
+
+/* POSTS */
+
+.featured-img {
+  width: 100%;
+}
+
+.post-title {
+  margin: 1rem 0;
+}

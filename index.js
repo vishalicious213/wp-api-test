@@ -18,10 +18,12 @@ function renderPosts(data) {
     data.forEach(post => {
         console.log(post.title)
         postsToRender += `
-            <section>
-                <h2>${post.title.rendered}</h2>
-                <div>${post.content.rendered}</div>
+            <section class="blog-post">
+                <img class="featured-img" src=${post.jetpack_featured_media_url} alt=${post.slug}>
+                <h2 class="post-title">${post.title.rendered}</h2>
+                <div class="post-content">${post.content.rendered}</div>
             </section>
+            <hr class="post-separator">
         `
     })
 
