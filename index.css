@@ -17,7 +17,9 @@
 
 .featured-img {
   width: 100%;
-  min-height: 50vh;
+  height: auto;
+  min-height: 75vh;
+  object-fit: cover;
 }
 
 .post-title {
@@ -36,6 +38,12 @@
 
 .post-content p {
   margin-bottom: 1rem;
+  font-size: .9rem;
+}
+
+.post-content a {
+  word-wrap: break-word;
+  color: #AB1226;
 }
 
 /* STYLES FOR WORDPRESS CLASSES */
@@ -45,4 +53,6 @@
   padding: 1rem;
   margin: 1rem 0;
   text-wrap: wrap;
+  word-wrap: break-word;
+  font-size: .8rem;
 }
