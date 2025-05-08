@@ -46,6 +46,13 @@
   color: #AB1226;
 }
 
+.post-content h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
 /* STYLES FOR WORDPRESS CLASSES */
 
 .wp-block-code {
