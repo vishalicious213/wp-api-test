@@ -29,3 +29,20 @@
   text-transform: uppercase;
   background: rgba(0, 0, 0, .3);
 }
+
+.post-content {
+  margin: 1rem;
+}
+
+.post-content p {
+  margin-bottom: 1rem;
+}
+
+/* STYLES FOR WORDPRESS CLASSES */
+
+.wp-block-code {
+  background: #F2F2F2;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-wrap: wrap;
+}
