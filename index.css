@@ -40,6 +40,7 @@
 
 .post-content {
   margin: 1rem auto;
+  padding: 0 1rem;
   max-width: 800px;
 }
 
@@ -106,6 +107,7 @@
 .wp-block-gallery {
   display: flex;
   gap: .25rem;
+  /* margin: auto 1rem; */
 }
 
 .tiled-gallery__row {
