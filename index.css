@@ -9,6 +9,17 @@
   margin: 2rem 0;
 }
 
+/* POSTS GALLERY */
+
+.blog-posts-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.thumbnail-img {
+  width: 100%;
+}
+
 /* POSTS */
 
 .blog-post {
@@ -118,4 +129,12 @@
 
 .tiled-gallery__row img {
   width: 100%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 570px) {
+  .blog-post-thumbnail {
+    width: 50%;
+  }
 }
