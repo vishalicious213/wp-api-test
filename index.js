@@ -1,4 +1,5 @@
 const postsSection = document.getElementById("blog-posts")
+const postsGallery = document.getElementById("blog-posts-gallery")
 const posts = getPosts()
 
 async function getPosts() {
@@ -30,10 +31,30 @@ function renderPosts(data) {
     postsSection.innerHTML = postsToRender
 }
 
+function renderPostGallery(data) {
+    let postsToRender = ""
+
+    data.forEach(post => {
+        console.log(post.title)
+        console.log(post.jetpack_featured_media_url)
+        console.log(post.link)
+
+        postsToRender += `
+            <section class="blog-post-thumbnail">
+                <img class="thumbnail-img" src=${post.jetpack_featured_media_url} alt=${post.title.rendered}>
+                <h2 class="thumbnail-title">${post.title.rendered}</h2>
+            </section>
+        `
+
+        postsGallery.innerHTML = postsToRender
+    })
+}
+
 posts
 .then(data => {
     console.log(data)
-    renderPosts(data)
+    // renderPosts(data)
+    renderPostGallery(data)
 })
 .catch(error => {
     console.error(`Could not get posts: ${error}`)
