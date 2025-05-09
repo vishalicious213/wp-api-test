@@ -25,7 +25,13 @@
 .post-title {
   position: absolute;
   top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   padding: 2rem;
+  max-width: 600px;
+  font-size: 2rem;
+  font-weight: 500;
   color: white;
   text-align: center;
   text-transform: uppercase;
@@ -33,7 +39,8 @@
 }
 
 .post-content {
-  margin: 1rem;
+  margin: 1rem auto;
+  max-width: 800px;
 }
 
 .post-content p {
@@ -87,4 +94,9 @@
 .wp-block-list li {
   margin-bottom: .25rem;
   font-size: .9rem;
+}
+
+.wp-block-gallery {
+  display: flex;
+  gap: .5rem;
 }
