@@ -105,5 +105,15 @@
 
 .wp-block-gallery {
   display: flex;
-  gap: .5rem;
+  gap: .25rem;
+}
+
+.tiled-gallery__row {
+  display: flex;
+  gap: .25rem;
+  margin: 1rem 0;
+}
+
+.tiled-gallery__row img {
+  width: 100%;
 }
