@@ -144,3 +144,9 @@
     width: 33%;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .blog-post-thumbnail {
+    width: 25%;
+  }
+}
