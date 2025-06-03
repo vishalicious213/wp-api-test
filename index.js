@@ -37,7 +37,7 @@ function renderPostGallery(data) {
     data.forEach(post => {
         postsToRender += `
             <section class="blog-post-thumbnail">
-                <img class="thumbnail-img" src=${post.jetpack_featured_media_url} alt=${post.title.rendered}>
+                <img class="thumbnail-img" src=${post.jetpack_featured_media_url} alt=${post.slug}>
                 <h2 class="thumbnail-title">${post.title.rendered}</h2>
             </section>
         `
